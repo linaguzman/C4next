@@ -1,2 +1,1 @@
-# C4next
-proyecto de Gestión
+Sistema de Gestión de Proyectos
