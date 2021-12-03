@@ -4,7 +4,7 @@ const Usuario = required('../models/Usuario')
 const mongoose = required(mongoose)
 const Schema = mongoose.Schema
 
-const ProyectoSchema = new Schema ({
+const proyectoSchema = new Schema ({
     NombreProyecto: {
         type: String
     },
@@ -35,3 +35,4 @@ const ProyectoSchema = new Schema ({
         default: nula 
     },
 })
+module.export = mongoose.model("proyecto", proyectoSchema)
