@@ -1,0 +1,28 @@
+{
+  "name": "c4next-npm",
+  "version": "1.0.0",
+  "description": "Sistema de Gestión de Proyectos",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/linaguzman/C4next.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/linaguzman/C4next/issues"
+  },
+  "homepage": "https://github.com/linaguzman/C4next#readme",
+  "dependencies": {
+    "apollo-server-express": "^3.5.0",
+    "express": "^4.17.1",
+    "graphql": "^16.0.1",
+    "mongoose": "^6.0.14",
+    "nodemon": "^2.0.15"
+  }
+}
