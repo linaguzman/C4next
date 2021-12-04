@@ -1,6 +1,7 @@
-const {projectResolvers} = require('./project')
-const {userResolvers} = require('./user')
+const {proyectoResolvers} = require('./proyecto')
+const {usuarioResolvers} = require('./usuario')
 
-const resolvers = [projectResolvers, userResolvers]
+
+const resolvers = [proyectoResolvers, usuarioResolvers]
 
 module.exports = {resolvers}
