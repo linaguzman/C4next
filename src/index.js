@@ -13,9 +13,9 @@ const server = new ApolloServer({
 
 mongoose.connect("mongodb+srv://C4NEXT:1234@clusterc4next.drerp.mongodb.net/BD-gestion-de-proyectos?retryWrites=true&w=majority", async()=>{
     console.log("conexion exitosa");
-    app.listen(5010, async()=>{
+    app.listen(4000, async()=>{
         await server.start()
         server.applyMiddleware({app})
-        console.log("servidor inicializado en puerto 5010");
+        console.log("servidor inicializado en puerto 4000");
     })
 })
