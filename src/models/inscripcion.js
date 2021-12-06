@@ -1,6 +1,6 @@
 const mongoose = require ('mongoose')
 const Schema = mongoose.Schema
-const Project = require ('./project')
+const proyecto = require ('./proyecto')
 
 const inscripcionSchema = new Schema ({
     Proyecto : {

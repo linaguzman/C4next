@@ -1,8 +1,8 @@
 const { proyectoType } = require('./proyecto')
 const { usuarioType } = require('./usuario')
-const {inscriptionType} = require ('./inscription')
+const {inscripcionType} = require ('./inscripcion')
 
-const types = [proyectoType, usuariorType, inscriptionType]
+const types = [proyectoType, usuarioType, inscripcionType]
 module.exports = {
     types
 }

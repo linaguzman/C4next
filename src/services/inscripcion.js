@@ -1,4 +1,4 @@
-const inscripcion = require ("../models/inscription")
+const inscripcion = require ("../models/inscripcion")
 
 
 
