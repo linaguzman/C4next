@@ -1,13 +1,20 @@
 const mongoose = require ('mongoose')
 const Schema = mongoose.Schema
+const proyecto = require('./proyecto')
 
-const EstadoProyecto = new Schema ({
+const estadoProyecto = new Schema ({
     Activo: {
-        type: String
+        type: String,
+        requiered: true
     },
     Inactivo: {
-        type: String
-    }
+        type: String,
+        requiered: true
+    },
+    usuario: [{
+        type: Schema.Types.ObjectId,
+        ref: "proyecto"
+    }]
 })
 
-module.exports = mongoose.model("EstadoProyecto", EstadoProyectoSchema)
+module.exports = mongoose.model("estadoProyecto", estadoProyectoSchema)

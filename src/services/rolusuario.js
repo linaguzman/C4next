@@ -1,11 +1,10 @@
-const project = require ('../models/rol')
-const userservices = require("../../usuario/src/services/user")
+const usuarioservices = require("'./usuario")
 
 
 createrol =async(rol)=>{
     let rolInstance = new rol(rol)
     createrol =await rolInstance.save()
-    await userservices.updaterol(rol['rol'],createrol['_id'])
+    await usuarioservices.updaterol(rol['rol'],createrol['_id'])
     return createrol
 }
 
