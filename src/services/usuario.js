@@ -16,11 +16,6 @@ getusuarioById = async(usuarioId) =>{
     return usuario
 }
 
-updateusuario = async (usuarioId, usuario)=>{
-    let new_usuario = usuario.findByIdAndUpdate(usuarioId, usuario,{new:true})
-    return new_usuario
-}
-
 Updateproyecto = async(usuarioId, proyectoId)=>{
     let usuario = await usuario.findByIdAndUpdate(usuarioId,{
         $push:{
@@ -29,6 +24,13 @@ Updateproyecto = async(usuarioId, proyectoId)=>{
     })
     return usuario
 }
+
+updateusuario = async (usuarioId, usuario)=>{
+    let new_usuario = usuario.findByIdAndUpdate(usuarioId, usuario,{new:true})
+    return new_usuario
+}
+
+
 
 module.exports = {
     createUsuario,
