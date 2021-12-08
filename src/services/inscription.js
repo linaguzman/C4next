@@ -13,8 +13,9 @@ getInscripcion = async () => {
 
 getInscripcionById = async (inscripcionId) => {
    let inscripcion = await inscripcion.findById (inscripcionId)
-   .populate("usuarios")
-   .populate("proyectos")
+   .populate("Proyectos")
+   .populate('Usuarios')
+   .populate('estadoInscripcion')
    return inscripcion
 }
 
