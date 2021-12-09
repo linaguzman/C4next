@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
 const Schema = mongoose.Schema
 
-const FasesProyectoSchema = new Schema ({
+const fasesProyectoSchema = new Schema ({
     Iniciado: {
         type: String
     },
@@ -13,4 +13,4 @@ const FasesProyectoSchema = new Schema ({
     }
 })
 
-module.exports = mongoose.model ("FasesProyecto", FasesProyectoSchema)
+module.exports = mongoose.model ("fasesProyecto", fasesProyectoSchema)

@@ -12,10 +12,10 @@ type inscripcion{
 }
 type proyecto{
     _id: ID!
-    name: String
+    nombre: String
     description: String
     topic: String        
-    owner: ID
+    lider: ID
     
 }
 

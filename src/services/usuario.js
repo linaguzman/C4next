@@ -1,7 +1,7 @@
-const Usuario = require('../models/usuario')
+const usuario = require('../models/usuario')
 
 createUsuario = async (usuario) => {
-    let usuarioInstance = new Usuario(usuario)
+    let usuarioInstance = new usuario(usuario)
     usuario = await usuarioInstance.save()
     return usuario
 }

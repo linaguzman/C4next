@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
 const Schema = mongoose.Schema
-const Usuario = require('./usuario')
-const Proyecto = require('./proyecto')
+const usuario = require('./usuario')
+const proyecto = require('./proyecto')
 
 const avancesSchema = new Schema ({
 
@@ -20,8 +20,8 @@ const avancesSchema = new Schema ({
     },
     creadoPor: [{
         type: Schema.Types.ObjectId,
-        ref: "Usuario"
+        ref: "usuario"
     }]
 })
 
-module.exports = mongoose.model("Avances", avancesSchema)
+module.exports = mongoose.model("avances", avancesSchema)

@@ -1,11 +1,11 @@
-const project = require ('../models/estado_usuario')
-const userservices = require("../../usuario/src/services/user")
+const proyecto = require ('../models/estado_usuario')
+const usuarioservices = require('../services/usuario')
 
 
 create_estado_usuario =async(estado_usuario)=>{
     let estado_usuarioInstance = new estado_usuario(estado_usuario)
     create_estado_usuario =await estado_usuarioInstance.save()
-    await userservices.updateproject(project['estado_usuario'],create_estado_usuario['_id'])
+    await usuarioservices.updateproyecto(proyecto['estado_usuario'],create_estado_usuario['_id'])
     return create_estado_usuario
 }
 
@@ -20,7 +20,7 @@ getestado_usuarioById = async()=>{
     return estado_usuario
 }
 
-updateProject = async(estado_usuarioId, estado_usuario)=>{
+updateproyecto = async(estado_usuarioId, estado_usuario)=>{
     newestado_usuario = await estado_usuario.findByIdAndUpdate(estado_usuarioId, estado_usuario,{new:true})
     return estado_usuario
 

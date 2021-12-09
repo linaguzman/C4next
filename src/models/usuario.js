@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 const Schema = mongoose.Schema
-const Proyecto = require('./proyecto')
+const proyecto = require('./proyecto')
 
 const UsuarioSchema = new Schema({
     email:{
@@ -20,20 +20,20 @@ const UsuarioSchema = new Schema({
     },
     rol: [{
         type: Schema.Types.ObjectId,
-        ref: "Rol"
+        ref: "rol"
     }],
     estado: [{
         type: Schema.Types.ObjectId,
-        ref: "Estado",
+        ref: "estado",
         defaul: "Pendiente"        
     }],
     proyecto:[{
         type: Schema.Types.ObjectId,
-        ref: "Proyecto"
+        ref: "proyecto"
     }],
     inscripcion: [{
         type: Schema.Types.ObjectId,
-        ref: "Inscripcion"
+        ref: "inscripcion"
     }]
 })
 

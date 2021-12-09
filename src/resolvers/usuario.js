@@ -9,6 +9,7 @@ const usuarioResolvers ={
         },
         getUsuarioById: async (parent,args)=>{
             let usuario = await usuarioService.getUsuarioById(args._id)
+            return usuario
         }
     },
     Mutation:{

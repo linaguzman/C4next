@@ -1,4 +1,4 @@
-const Proyecto = require('../models/proyecto')
+const proyecto = require('../models/proyecto')
 const usuarioService = require("./usuario")
 
 const createProyecto = async (proyecto) => {
@@ -19,7 +19,7 @@ const getProyectoById = async (proyectoId) => {
 }
 
 const updateProyecto = async (proyectoId, proyecto) => {
-    newProyecto = await Proyecto.findByIdAndUpdate(proyectoId, proyecto, { new: true })
+    newProyecto = await proyecto.findByIdAndUpdate(proyectoId, proyecto, { new: true })
     return newProyecto
 }
 

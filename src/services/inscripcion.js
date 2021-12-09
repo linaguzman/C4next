@@ -23,10 +23,10 @@ updateInscripcion = async (inscripcionId, inscripcion) => {
     return new_inscripcion
 }
 
-UpdateProject = async (inscripcionId, projectId) => {
+updateproyecto = async (inscripcionId, proyectoId) => {
     let inscripcion = await inscripcion.findByIdAndUpdate(inscripcionId, {
         $push: {
-            projects: projectId
+            proyectos: proyectoId
         }
     })
     return inscripcion
@@ -37,5 +37,5 @@ module.exports = {
     getInscripcion,
     getInscripcionById,
     updateInscripcion,
-    UpdateProject
+    Updateproyecto
 }

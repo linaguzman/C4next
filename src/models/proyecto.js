@@ -4,7 +4,7 @@ const Usuario = require('./usuario')
 const fasesProyecto = require('./fasesProyecto')
 const estadoProyecto = require('./estadoProyecto')
 
-const ProyectoSchema = new  Schema({
+const proyectoSchema = new  Schema({
     
     nombre:{
         type: String
@@ -20,11 +20,11 @@ const ProyectoSchema = new  Schema({
     },
     Lider: [{
         type: Schema.Types.ObjectId,
-        ref: "Usuario"
+        ref: "usuario"
     }],
     identificacion: [{
         type: Schema.Types.ObjectId,
-        ref: "Usuario"
+        ref: "usuario"
     }],
     estado: {
         type: String,
@@ -37,4 +37,4 @@ const ProyectoSchema = new  Schema({
 
 })
 
-module.exports = mongoose.model("Proyecto", ProyectoSchema)
+module.exports = mongoose.model("proyecto", proyectoSchema)
