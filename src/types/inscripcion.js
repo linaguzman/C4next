@@ -18,7 +18,6 @@ type proyecto{
     owner: ID
     
 }
-
 type Query {
     getInscripcion : [inscripcion]
     getInscripcionById (_id : String): inscripcion

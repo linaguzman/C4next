@@ -1,4 +1,4 @@
-const inscripcionService = require ('../services/inscription')
+const inscripcionService = require ('../services/inscripcion')
 
 const inscripcionResolvers = {
     Query : {
