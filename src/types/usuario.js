@@ -2,7 +2,6 @@ const { gql } = require("apollo-server-express")
 
 const usuarioType = gql`
     scalar Date
-
     type usuario{
         _id: ID!
         correo: String

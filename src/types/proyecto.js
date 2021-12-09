@@ -1,8 +1,7 @@
 const { gql } = require("apollo-server-express")
 
-const proyectoType = gql`
+const usuarioType = gql`
     scalar Date
-
     type usuario{
         _id: ID!
         correo: String
@@ -21,31 +20,32 @@ const proyectoType = gql`
         presupuesto: Float
         fechaInicio: Date
         fechaFin: Date
-        lider: ID
+        lider: ID        
         estado: [estado]
         fase: [faseProyecto]
+        
     }
-    type Query{
-        getproyectos:[proyecto]
-        getproyectoById(_id:String):proyecto
+    type Query {
+        getusuarios: [usuario]
+        getusuarioById(_id:String): usuario
     }
-    type Mutation{
-        createproyecto(
-            nombre: String
-            description: String
-            objetivo: String
-            presupuesto: Float
-            estado: [estado]
-            fase: [faseProyecto]
-        ): 
-        proyecto
-        updateproyecto(
+    type Mutation {
+        createUsuario(
+            name: String
+            lastName: String
+            phone: String
+            email: String!
+            password: String!
+        ): usuario
+        updateusuario(
             _id: ID!
-            nombre: String
-            objetivo: String
-            estado: [estado]
-            fase: [faseProyecto]
-        ):proyecto
+            name: String
+            lastName: String
+            phone: String
+            email: String!
+            password: String!
+        ): usuario
     }
 `;
-module.exports = { proyectoType }
+
+module.exports = {usuarioType}

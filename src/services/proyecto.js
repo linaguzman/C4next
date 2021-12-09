@@ -9,12 +9,12 @@ const createProyecto = async (proyecto) => {
 }
 
 const getProyectos = async () => {
-    let proyectos = await Proyecto.find({})
+    let proyectos = await proyecto.find({})
     return proyectos
 }
 
 const getProyectoById = async (proyectoId) => {
-    let proyecto = await Proyecto.findById(proyectoId).exec()
+    let proyecto = await proyecto.findById(proyectoId).exec()
     return proyecto
 }
 

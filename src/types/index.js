@@ -1,13 +1,10 @@
 const { proyectoType } = require('./proyecto')
 const { usuarioType } = require('./usuario')
 const {inscripcionType} = require ('./inscripcion')
-const { avance } = require('./avances')
-const { estadoProyecto } = require('./estadoProyecto')
-const { estadousuario } = require('./estadousuario')
-const { fasesProyecto } = require('./fasesProyecto')
-const { rolusuario } = require('./rolusuario')
+const { avanceType } = require('./avances')
 
-const types = [proyectoType, usuarioType, inscripcionType, avanceType, estadoProyectoType, estadousuarioType, fasesProyectoType, rolusuarioType]
+
+const types = [proyectoType, usuarioType, inscripcionType, avanceType]
 module.exports = {
     types
 }

@@ -7,7 +7,7 @@ const avancesSchema = new Schema ({
 
     proyecto: [{
         type: Schema.Types.ObjectId,
-        ref: "Poyecto"
+        ref: "proyecto"
     }],
     fecha: {
         type: Date

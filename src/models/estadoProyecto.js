@@ -2,7 +2,7 @@ const mongoose = require ('mongoose')
 const Schema = mongoose.Schema
 const proyecto = require('./proyecto')
 
-const estadoProyecto = new Schema ({
+const estadoProyectoSchema = new Schema ({
     Activo: {
         type: String,
         requiered: true

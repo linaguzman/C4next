@@ -4,7 +4,7 @@ const Usuario = require('./usuario')
 const fasesProyecto = require('./fasesProyecto')
 const estadoProyecto = require('./estadoProyecto')
 
-const proyectoSchema = new  Schema({
+const ProyectoSchema = new  Schema({
     
     nombre:{
         type: String

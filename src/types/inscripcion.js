@@ -18,7 +18,6 @@ type proyecto{
     lider: ID
     
 }
-
 type Query {
     getInscripcion : [inscripcion]
     getInscripcionById (_id : String): inscripcion
